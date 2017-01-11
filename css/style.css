@@ -1,0 +1,63 @@
+* {margin: 0; padding: 0; font-family: Verdana, sans-serif;}
+
+.wrapper {width: 100%;}
+
+header {
+	width: 1400px;
+	height: 80px;
+	margin: 0 auto;
+}
+header, header a {color: #E31F25; text-decoration: none;}
+	.logo {
+		width: 180px;
+		height: 60px;
+		float: left;
+		background: url("../img/logo-victoria.png") 0 0 no-repeat;
+		padding-left: 70px;
+		padding-top: 20px;
+	}
+		.logo span {
+			text-transform: uppercase;
+			font-size: 10px;
+			font-weight: 600;
+		}
+		.logo h1 {
+			font-size: 15px;
+		}
+	nav {float: left;}
+		nav a {
+			display: inline-block;
+			height: 55px;
+			padding-top: 25px;
+			text-transform: uppercase;
+			font-size: 20px;
+			margin-left: 40px;
+		}
+	.contacts {
+		float: right;
+	}
+		.phone, .email {
+			padding-left: 30px;
+			height: 20px;
+			margin-top: 15px;
+			font-size: 14px;
+		}
+		.phone {
+			background: url("../img/logo-phone.png") 0 0 no-repeat;
+		}
+		.email {
+			background: url("../img/logo-email.png") 0 0 no-repeat;
+		}
+
+.slider {
+	clear: both;
+	height: 800px;
+	background: url("../img/slider-bg.jpg") 0 0 no-repeat;
+	padding-top: 300px;
+}
+	.slide {
+		width: 400px;
+		height: 400px;
+		display: inline-block;
+		background-color: green;
+	}
