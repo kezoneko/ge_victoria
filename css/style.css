@@ -1,11 +1,35 @@
 * {margin: 0; padding: 0; font-family: Verdana, sans-serif;}
 
-.wrapper {width: 100%;}
+.wrapper {width: 100%; background-color: #ccc;}
+
+.container-1 {width: 70%; /* 1400px */}
+.container-2 {width: 92%;}
+.con-2 { position: relative; padding-top: 357px; padding-bottom: 50px;}
+.con-3 {padding-top: 80px;}
+.container-1, .container-2 {margin: 0 auto;}
+.slide-container-1, .slide-container-2, .slide-container-3 {
+	width: 480px;
+	background-color: #fff;
+	height: 640px;
+}
+.slide-container-1 {float: left;}
+.slide-container-2 {margin: 0 auto;}
+.slide-container-3 {float: right;}
+.button {
+	border-radius: 20px;
+	border: 2px solid #E31F25;
+	background-color: #fff;
+	color: #E31F25;
+	text-transform: uppercase;
+	padding: 5px;
+	font-size: 18px;
+	margin: 0 auto;
+	cursor: pointer;
+}
 
 header {
-	width: 1400px;
 	height: 80px;
-	margin: 0 auto;
+	background-color: #fff;
 }
 header, header a {color: #E31F25; text-decoration: none;}
 	.logo {
@@ -51,13 +75,150 @@ header, header a {color: #E31F25; text-decoration: none;}
 
 .slider {
 	clear: both;
-	height: 800px;
+	height: 1014px;
 	background: url("../img/slider-bg.jpg") 0 0 no-repeat;
-	padding-top: 300px;
+	padding-bottom: 80px;
 }
 	.slide {
-		width: 400px;
-		height: 400px;
-		display: inline-block;
-		background-color: green;
+		position: absolute;
+		color: #E31F25;
+		text-align: center;
 	}
+	.slide-1 {
+		width: 33%;
+	}
+	.slide-2 {
+		width: 34%;
+		left: 33%;
+	}
+	.slide-3 {
+		width: 33%;
+		right: 0;
+		margin: 0 ;
+	}
+		.slide-img {
+			display: block;
+			max-width: 480px;
+			background-color: #ccc;
+		}
+		.slide h3 {
+			font-size: 35px;
+			font-weight: 500;
+			margin-top: 15px;
+		}
+		.look {
+			height: 50px;
+			margin-top: 10px;
+			margin-bottom: 15px;
+		}
+			.look > .button {
+				display: inline-block;
+			}
+		.slide button {
+			display: block;
+			margin-bottom: 30px;
+		}
+		.slide span {
+			font-size: 14px;
+			display: block;
+		}
+		.slide-logo {
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+
+.content {
+	clear: both;
+	background-color: #fff;
+	padding-top: 20px;
+}
+	.content h2 {
+		text-transform: uppercase;
+		color: #E31F25;
+		text-align: center;
+		font-size: 35px;
+		font-weight: 500;
+		letter-spacing: 0.1em;
+	}
+	.news-box {
+		min-height: 80px;
+		margin-bottom: 50px;
+		position: relative;
+		padding: 5px;
+	}
+		.news-date {
+			width: 80px;
+			height: 65px;
+			position: absolute;
+			left: 0;
+			top: 0;
+			background-color: #E31F25;
+			color: #fff;
+			text-align: center;
+			//line-height: 80px;
+			padding-top: 15px;
+			font-size: 22px;
+			color: #E1E3E0;
+		}
+		.news-content {
+			margin-left: 130px;
+			letter-spacing: 0.1em;
+		}
+			.news-content h3 {
+				text-transform: uppercase;
+				font-size: 22px;
+				font-weight: 500;
+				margin-bottom: 15px;
+			}
+			.news-content p {
+				color: #3F3F3F;
+			}
+
+footer {
+	background-color: #A4A4A4;
+	min-height: 240px;
+	color: #E31F25;
+}
+	footer a {
+		color: #E31F25;
+		text-decoration: none;
+	}
+	footer a:hover {
+		text-decoration: underline;
+	}
+	.footer-logo {
+		width: 180px;
+		float: left;
+		background: url("../img/logo-victoria.png") 50% 0 no-repeat;
+		padding-top: 85px;
+		text-align: center;
+		margin-top: 60px;
+		margin-right: 150px;
+	}
+		.footer-logo span {
+			text-transform: uppercase;
+			font-size: 10px;
+			font-weight: 600;
+		}
+		.footer-logo h1 {
+			font-size: 15px;
+		}
+	.footer-menu {
+		float: left;
+		font-size: 26px;
+		padding-top: 50px;
+	}
+		.footer-menu ul {
+			list-style-type: none;
+		}
+		.footer-menu > ul > li {
+			height: 250px;
+			display: inline-block;
+			background-color: orange;
+		}
+			.footer-menu > ul > li > ul {
+				background-color: green;
+			}
+			.footer-menu > ul > li > ul > li {
+
+			}
